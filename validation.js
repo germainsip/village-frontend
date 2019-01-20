@@ -12,7 +12,7 @@ var mail = document.getElementById("mail");
 btn1.addEventListener("click", function () {
     var cbon = true;
 //    TODO: améliorer regex pour françois régis
-    var regPre =/^[a-zA-Z]{2,30}$/;
+    var regPre =/^\D{2,20}$/;
     if (regPre.test(prenom.value)==false) {
         cbon = false;
         prenom.className = "invalid";
@@ -20,7 +20,7 @@ btn1.addEventListener("click", function () {
         prenom.className = "valid";
       
     }
-    var regNom = /^[a-zA-Z]{2,30}$/;
+    var regNom = /^\D{2,20}$/;
     if (regNom.test(nom.value)==false) {
         cbon = false;
         nom.className = "invalid";
@@ -43,7 +43,7 @@ btn1.addEventListener("click", function () {
         cp.className = "valid";
     }
 // TODO: regex ville
-    var regeVille = /^[0-9]{5}$/;
+    var regeVille = /^\D{2,20}$/;
     if (regeVille.test(cp.value)==false) {
         cbon = false;
         ville.className = "invalid";
