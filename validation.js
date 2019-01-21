@@ -50,4 +50,15 @@ btn1.addEventListener("click", function () {
     } else {
         ville.className = "valid";
     }
+
+    var regTel = /(\+\d+(\s|-))?0\d(\s|-)?(\d{2}(\s|-)?){4}/
+    if (regTel.test(tel.value) == false){
+        cbon = false;
+        tel.className = "valid";
+    }
+    else {
+        tel.className = "valid";
+    }
+    
+    console.log(cbon);
 });
