@@ -42,9 +42,9 @@ btn1.addEventListener("click", function () {
     } else {
         cp.className = "valid";
     }
-// TODO: regex ville
-    var regeVille = /^\D{2,20}$/;
-    if (regeVille.test(cp.value)==false) {
+// // TODO: regex ville
+    var regVille = /^\D{2,20}$/;
+    if (regVille.test(ville.value)==false) {
         cbon = false;
         ville.className = "invalid";
     } else {
@@ -54,11 +54,16 @@ btn1.addEventListener("click", function () {
     var regTel = /(\+\d+(\s|-))?0\d(\s|-)?(\d{2}(\s|-)?){4}/
     if (regTel.test(tel.value) == false){
         cbon = false;
-        tel.className = "valid";
+        tel.className = "invalid";
     }
     else {
         tel.className = "valid";
     }
     
     console.log(cbon);
+    
+    console.log(cbon);
+    if (cbon){
+        document.getElementById("form1").submit();
+    }
 });
