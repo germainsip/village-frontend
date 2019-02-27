@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous" />
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <title>VillageGreen just stay</title>
     <style>
         /* .main {
@@ -20,6 +20,15 @@
         } */
         #bidule {
             padding-top: 7em;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
         }
     </style>
 </head>
@@ -148,7 +157,8 @@
 
                         <h5>Un conseillé <strong class="deep-orange-text">spécialiste</strong> dédié à vos <strong
                                 class="deep-orange-text">besoins</strong> et vos envies.</h5>
-                        <a href="#inscription" class="btn waves-effect waves-light ">Suivez le guide <i class="material-icons right">map</i> </a>
+                        <a href="#inscription" class="btn waves-effect waves-light ">Suivez le guide <i class="material-icons right">map</i>
+                        </a>
 
                     </blockquote>
                 </div>
@@ -230,84 +240,86 @@
             <section class="container section">
                 <h1 class="white-text  ">
                     Très bientôt...
-                    
+
                 </h1>
                 <h1 class="white-text">L'ATELIER!!!</h1>
             </section>
         </div>
         <section class="container section" id="inscription">
             <h1>Formulaire d'inscription</h1>
-        <div class="row ">
-            <div class="col s12 l3">
+            <div class="row ">
+                <div class="col s12 l3">
                     <p><img class="circle deep-orange lighten-2 responsive-img " src="images/commerciale.png" alt="Il y aura bientôt une image"></p>
-                    <p >Avec un <strong>compte personnel</strong>  vous aurez accès à tout notre catalogue et les meilleurs conseils d'un <strong>pro</strong> <i class="material-icons">verified_user</i></p>
+                    <p>Avec un <strong>compte personnel</strong> vous aurez accès à tout notre catalogue et les
+                        meilleurs conseils d'un <strong>pro</strong> <i class="material-icons">verified_user</i></p>
                     <p><strong>Déjà Client</strong><br>
-                    <a href="#" class="btn waves-effect waves-light ">Connectez vous<i class="material-icons right">security</i> </a>                    
+                        <a href="#" class="btn waves-effect waves-light ">Connectez vous<i class="material-icons right">security</i>
+                        </a>
                     </p>
-                    
 
-               
-        </div>
-            <form class="col s12 l8 offset-l1 z-depth-2" action="http://bienvu.net/script.php" method="post" id="form1">
-                <div class="container">
-                    <h4 class="deep-orange-text">Fiche perso</h4>
-                    <div class="row">
-                        <div class="input-field col s12 l6">
-                            <input type="text" name="prenom" id="prenom" class="">
-                            <label for="prenom">Prénom</label>
-                            <span class="helper-text" data-error="format non reconnu" data-success="ok"></span>
-                        </div>
-                        <div class="input-field col s12 l6">
-                            <input type="text" name="nom" id="nom" class="">
-                            <label for="nom">Nom</label>
-                            <span class="helper-text" data-error="format non reconnu" data-success="ok"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 l12">
-                            <input type="text" name="adresse" id="adresse" class="validate">
-                            <label for="adresse">Adresse</label>
-                            <span class="helper-text" data-error="format non reconnu" data-success="ok"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 l6">
-                            <input type="text" name="cp" id="cp" class="validate">
-                            <label for="cp">Code postal</label>
-                            <span class="helper-text" data-error="code à 5 chiffres" data-success="ok"></span>
 
-                        </div>
-                        <div class="input-field col s12 l6">
-                            <input type="text" name="ville" id="ville" class="validate">
-                            <label for="ville">Ville</label>
-                            <span class="helper-text" data-error="format non reconnu" data-success="ok"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12 l6">
-                            <i class="material-icons prefix">phone</i>
-                            <input type="tel" id="telephone"  required name="telephone" class="validate">
-                            <label for="telephone">Mobile</label>
-                            <span class="helper-text" data-error="format non reconnu" data-success="ok"></span>
-                        </div>
-                        <div class="input-field col s12 l6">
-                            <i class="material-icons prefix">mail</i>
-                            <input type="email" id="mail" required name="mail" class="validate">
-                            <label for="mail">Mail</label>
-                            <span class="helper-text" data-error="mail non valide" data-success="ok"></span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12 l12">
-                            <a href="#inscription" class="btn right" id="btn1"><i class="material-icons right">send</i>Envoyer</a>
-                        </div>
-                    </div>
+
                 </div>
+                <form class="col s12 l8 offset-l1 z-depth-2" action="monscript.php" method="post" id="form1">
+                    <div class="container">
+                        <h4 class="deep-orange-text">Fiche perso</h4>
+                        <div class="row">
+                            <div class="input-field col s12 l6">
+                                <input type="text" name="prenom" id="prenom" class="">
+                                <label for="prenom">Prénom</label>
+                                <span class="helper-text" data-error="format non reconnu" data-success="ok"></span>
+                            </div>
+                            <div class="input-field col s12 l6">
+                                <input type="text" name="nom" id="nom" class="">
+                                <label for="nom">Nom</label>
+                                <span class="helper-text" data-error="format non reconnu" data-success="ok"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 l12">
+                                <input type="text" name="adresse" id="adresse" class="validate">
+                                <label for="adresse">Adresse</label>
+                                <span class="helper-text" data-error="format non reconnu" data-success="ok"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 l6">
+                                <input type="text" name="cp" id="cp" class="validate">
+                                <label for="cp">Code postal</label>
+                                <span class="helper-text" data-error="code à 5 chiffres" data-success="ok"></span>
+
+                            </div>
+                            <div class="input-field col s12 l6">
+                                <input type="text" name="ville" id="ville" class="validate">
+                                <label for="ville">Ville</label>
+                                <span class="helper-text" data-error="format non reconnu" data-success="ok"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 l6">
+                                <i class="material-icons prefix">phone</i>
+                                <input type="tel" id="telephone" required name="telephone" class="validate">
+                                <label for="telephone">Mobile</label>
+                                <span class="helper-text" data-error="format non reconnu" data-success="ok"></span>
+                            </div>
+                            <div class="input-field col s12 l6">
+                                <i class="material-icons prefix">mail</i>
+                                <input type="email" id="mail" required name="mail" class="validate">
+                                <label for="mail">Mail</label>
+                                <span class="helper-text" data-error="mail non valide" data-success="ok"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 l12">
+                                <a href="#inscription" class="btn right" id="btn1"><i class="material-icons right">send</i>Envoyer</a>
+                            </div>
+                        </div>
+                    </div>
 
 
-        </div>
+            </div>
 
-        </form>
+            </form>
 
         </section>
     </div>
